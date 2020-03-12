@@ -20,4 +20,9 @@ $(window).on("scroll", function(){
         $('nav').removeClass('black');
     }
 
-})
+});
+
+
+$('#blogCarousel').carousel({
+    interval: 5000
+});
