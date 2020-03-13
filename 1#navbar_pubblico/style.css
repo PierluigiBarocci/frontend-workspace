@@ -161,7 +161,7 @@ nav ul li a:hover {
  /* inizio carousel grande*/
 
  .carousel-item {
-    height: 70vh;
+    /* height: 100vh; */
 }
 .img-box {
     margin-top: 150px;
