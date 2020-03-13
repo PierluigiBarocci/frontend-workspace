@@ -10,10 +10,11 @@ body {
 
 header {
   width: 100%;
-  height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2018/12/12/10/51/meadow-3870566_960_720.jpg")
+  /* height: 100vh; */
+  background-color: #b0c6f5;
+  /* background: url("https://cdn.pixabay.com/photo/2018/12/12/10/51/meadow-3870566_960_720.jpg")
     no-repeat 50% 50%;
-  background-size: cover;
+  background-size: cover; */
 
 }
 
@@ -62,7 +63,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, .9);
+  transition: all .2s;
 }
 
 .menu-icon {
@@ -77,6 +79,180 @@ nav ul li a:hover {
 }
 
 /* fine header */
+
+/* inizio campo search */
+.search {
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    top: -5px;
+    
+}
+
+.search-box input {
+    border: none;
+    background: none;
+    width: 25px;
+    height: 25px;
+    transition: all .25s ease-in .25s;
+    z-index: 1;
+    color: transparent;
+    font-size: 1em;
+    line-height: 25px;
+}
+
+.search-box input:hover {
+    cursor: pointer;
+
+}
+.search-box input:hover:focus {
+    cursor: text;
+
+}
+
+.search-box input:hover + span {
+
+    background: rgba(255, 255, 255, .2);
+}
+
+.search-box input:focus {
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+    color: black;
+    background: none;
+    color: #fff;
+}
+
+.search-box input:focus + span {
+    width: 200px;
+}
+
+.search-box input:focus + span::before {
+    width: 2px;
+    opacity: 0;
+    transition: all .25s ease-in;
+}
+
+.search-box input + span {
+    z-index: -1;
+    position: absolute;
+    border: 2px solid #fff;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transition: all .25s ease-in .25s;
+    border-radius: 25px;
+    left: 0;
+}
+
+.search-box input + span::before {
+    transition: all .25s ease-in .25s;
+    transform-origin: left top;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    transform: rotate(45deg) translate(26px, -2px);
+}
+
+ /* inizio carousel grande*/
+
+ .carousel-item {
+    height: 70vh;
+}
+.img-box {
+    margin-top: 150px;
+    width: 550px;
+    position: relative;
+}
+.pic-one {
+    position: relative;
+    top: 400px;
+    width: 160%;
+    right: 290px;
+    
+}
+.pic-two {
+    width: 50px;
+    position: relative;
+    top: 150px;
+}
+
+.pic-four {
+    width: 100px;
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+.pic-six {
+    width: 100px;
+    position: absolute;
+    left: 150px;
+    bottom: 300px;
+    
+}
+
+.slide-one{
+    background-color: #b0c6f5;
+}
+
+.carousel-item .row {
+    margin: 12% 0;
+}
+
+.carousel-item h1{
+    margin-top: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carousel-item p{
+    margin: 30px 0 50px;
+    font-size: 13px;
+    color: #000;
+}
+
+.carousel-item button {
+    padding: 8px 20px;
+    background: #0c5ce3;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.img-one{
+    position: relative;
+    top: 150px;
+    width: 50%;
+    right: -30px;
+}
+.img-two{
+    width: 180px;
+    position: absolute;
+    right: -40px;
+    top: 150px;
+}
+.img-three{
+    width: 50%;
+    position: relative;
+    right: 300px;
+    bottom: 20px;
+}
+.img-four{
+    width: 180px;
+    position: absolute;
+    right: 155px;
+    bottom: 350px;
+}
+
+
+
 
 /* inizio parte 1 */
 
@@ -109,7 +285,7 @@ nav ul li a:hover {
 /* carousel foto */
 
 #blogCarousel {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .blog .carousel-indicators {
@@ -118,7 +294,7 @@ nav ul li a:hover {
   bottom: -40px;
 }
 
-/* The colour of the indicators */
+
 .blog .carousel-indicators li {
   background: #a3a3a3;
   border-radius: 50%;
@@ -135,14 +311,6 @@ nav ul li a:hover {
 .container {
     margin-top: 100px;
 }
-
-
-.banner {
-    background: #a770ef;
-    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-  }
-
 
 
 

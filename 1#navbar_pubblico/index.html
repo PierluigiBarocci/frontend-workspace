@@ -35,6 +35,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css">
+    
     <title>Navbar Pubblica</title>
   </head>
   <body>
@@ -46,11 +48,18 @@
           <div class="menu-icon">
             <i class="fa fa-bars fa-2x"></i>
           </div>
+          
           <div class="logo">
-            <a href="#">
-              <img src="img/LogoBoolBnB.png" alt="logo boolBnB" />
-            </a>
+            <a href="#"><img src="img/LogoBoolBnB.png" alt="logo boolBnB"/></a>
+            
+                <div class="search">
+                    <div class="search-box">
+                        <input type="text">
+                        <span></span>
+                    </div>
+                </div>                                   
           </div>
+
           <div class="menu">
             <ul>
               <li><a href="#">Italiano</a></li>
@@ -63,27 +72,42 @@
           </div>
         </nav>
         
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active slide-one">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="animated fadeInLeft delay-1s">Case vacanze, alloggi, esperienze e luoghi</h1>
+                                <p class="animated lightSpeedIn delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quos, voluptate vel
+                                    numquam voluptas, incidunt dicta voluptatum perferendis sit odio autem aliquid qui!
+                                    Quasi alias perferendis quisquam, error dolorum neque.</p>
+                                <button type="button" class="animated jackInTheBox delay-5s">Scopri di piu'</button>
+    
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img-box">
+                                    <img src="images/pic-1.png" class="pic-one animated zoomIn delay-1s">
+                                    <img src="images/pic-2.png" class="pic-two animated fadeInLeft delay-4s">
+                                    <img src="images/pic-4.png" class="pic-four animated fadeInDown delay-3s">
+                                    <img src="images/pic-6.png" class="pic-six animated jackInTheBox delay-5s">
+                                    <img src="images/img-1.png" class="img-one animated zoomIn delay-1s">
+                                    <img src="images/img-2.png" class="img-two animated fadeInLeft delay-4s">
+                                    <img src="images/img-3.png" class="img-three animated fadeInUp delay-3s">
+                                    <img src="images/img-4.png" class="img-four animated fadeInDown delay-3s">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
       </header>
     </div>
     <!-- fine header -->
 
     
-
-
-
-    <div class="container">
-    <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
-        <div class="input-group">
-          <input type="search" placeholder="Cosa stai cercando?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
-          <div class="input-group-append">
-            <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
 
     <div class="container">
         <div class="row">
@@ -119,10 +143,9 @@
                         <li data-target="#blogCarousel" data-slide-to="1"></li>
                     </ol>
 
-                    <!-- Carousel items -->
                     <div class="carousel-inner">
 
-                        <div class="carousel-item active">
+                        <div class="carousel active">
                             <div class="row">
                                 <div class="col-md-3">
                                     <a href="#">
@@ -145,9 +168,9 @@
                                     </a>
                                 </div>
                             </div>
-                            <!--.row-->
+                            
                         </div>
-                        <!--.item-->
+                        
 
                         <div class="carousel-item">
                             <div class="row">
@@ -172,19 +195,14 @@
                                     </a>
                                 </div>
                             </div>
-                            <!--.row-->
+                           
                         </div>
-                        <!--.item-->
-
+                        
                     </div>
-                    <!--.carousel-inner-->
-                </div>
-                <!--.Carousel-->
-
+                    
+                </div>               
             </div>
         </div>
-</div>
-
 
 
 <div class="container">
