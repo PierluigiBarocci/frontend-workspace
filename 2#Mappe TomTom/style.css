@@ -1,0 +1,9 @@
+#map {
+    width: 400px;
+    height: 400px;
+}
+#name-apa {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
